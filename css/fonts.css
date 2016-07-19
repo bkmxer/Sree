@@ -4,3 +4,31 @@
   font-weight: normal;
   src: url("..libs/font-awesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("..libs/font-awesome/fontawesome-webfont.woff") format("woff"), url("..libs/font-awesome/fontawesome-webfont.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "RobotoSlab-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/robotoslab_bold_macroman/RobotoSlab-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotoslab_bold_macroman/RobotoSlab-Bold-webfont.woff") format("woff"), url("../fonts/robotoslab_bold_macroman/RobotoSlab-Bold-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoSlab-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/robotoslab_light_macroman/RobotoSlab-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotoslab_light_macroman/RobotoSlab-light-webfont.woff") format("woff"), url("../fonts/robotoslab_light_macroman/RobotoSlab-light-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoSlab-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/robotoslab_regular_macroman/RobotoSlab-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotoslab_regular_macroman/RobotoSlab-regular-webfont.woff") format("woff"), url("../fonts/robotoslab_regular_macroman/RobotoSlab-regular-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoSlab-Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/robotoslab_thin_macroman/RobotoSlab-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotoslab_thin_macroman/RobotoSlab-thin-webfont.woff") format("woff"), url("../fonts/robotoslab_thin_macroman/RobotoSlab-thin-webfont.ttf") format("truetype");
+}

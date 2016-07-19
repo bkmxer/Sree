@@ -13,16 +13,33 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
+.left_allignment{  text-align: center; margin-top:10px;}
+.right_allignment  {text-align: center; }
+
+input[type="email_id"]{ padding:5px 35px;}
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+  .socials{
+    display: none;
+  }
+  .logo{
+    text-align: center;
+    margin:auto;
+    font-size: 80px;
+    margin-top: 50px;
+  }
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+input[type="email_id"]{ padding:5px 5px;}
 
+.moto_wrapper{
+  font-size: 30px;
+}
 }
 
 

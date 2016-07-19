@@ -1,1 +1,91 @@
 @import "bourbon/bourbon"
+$blue_header_color:#267FBA
+$h1_size: 50px
+$h2_size: 40px
+$h3_size: 30px
+$h4_size: 20px
+$h5_size: 16px
+$h6_size: 14px
+$h7_size: 12px
+$active_button: #20628E
+
+
+
+
+.logo
+  font-size: $h3_size
+  letter-spacing: -5px
+  text-transform: uppercase
+  margin:10px 25px
+  margin-right:auto
+
+.top_container
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  justify-content: space-betweem
+header
+  background-color: $blue_header_color
+  color:#fff
+.socials
+  margin:10px 25px
+  font-size: $h5_size
+  vertical-align: middle
+.socials i
+  margin:auto 10px
+  vertical-align: middle
+  line-height: 40px
+.stick-header
+  background-color: none
+.white_button
+  background-color: #fff
+  border:1px solid #fff
+  font-family: RobotoSlab-Thin
+  color: #53A7E0
+  padding:5px 20px 5px 40px !important
+  font-size: $h6_size
+  position: relative
+  background-image:  url(../images/Envelope.png)
+  background-size: 25%
+  background-position: 5px
+  background-repeat: no-repeat
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1)
+  &:hover
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+      bottom: 1px
+  &:active
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+      background-color: $active_button
+      border-color: $active_button
+      bottom: 0px
+
+.middle_allignment
+  text-align: center
+.left_allignment
+  text-align: left
+.right_allignment
+  text-align: right
+.moto_wrapper
+  font-size: $h2_size
+  font-family: RobotoSlab-Light
+  margin-top:120px
+.Promise_wrapper
+  color: darken(#fff, 10%)
+  font-size: $h5_size
+  font-family: RobotoSlab-Light
+
+input[type="email_id"]
+  border:1px solid #fff
+  padding:5px 15px
+  font-size: $h6_size
+  color: lighten(black, 50%)
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+
+  &::placeholder
+    font-size: $h7_size
+    font-family: RobotoSlab-Light
+.form_notify
+  padding-bottom: 10px
+  margin-top: 50px
+  margin-bottom: 20px
