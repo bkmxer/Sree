@@ -1,6 +1,5 @@
 $(document).ready(function() {
 var variants_array = ["Better future", "Idealisation", "Perfection"];
-var timerID = null;
 function randomInteger(min, max) {
   var rand = min + Math.random() * (max - min)
   rand = Math.round(rand);
