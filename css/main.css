@@ -104,3 +104,50 @@ input[type="email_id"]::placeholder {
   margin-top: 50px;
   margin-bottom: 20px;
 }
+
+.Section_header_wrap {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.Section_header {
+  text-transform: capitalize;
+  font-family: RobotoSlab-Light, serif;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.row span.h7 {
+  font-size: 12px;
+  text-align: center;
+}
+
+section.features {
+  background-color: #F2F2F2;
+  font-family: RobotoSlab-Light;
+}
+
+.feature_wrap {
+  color: #fff;
+  padding: 10px;
+  margin: 30px 5px 0px 5px;
+  display: flex;
+  background-color: #3498DB;
+  transition: all 0.25s;
+  border: 2px solid #fff;
+}
+
+.feature_wrap:hover {
+  border: 2px solid #000;
+}
+
+.feature_logo {
+  margin: 20px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 50px;
+}
+
+.feature_logo i {
+  vertical-align: middle;
+}
