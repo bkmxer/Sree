@@ -9,6 +9,35 @@ $h6_size: 14px
 $h7_size: 12px
 $active_button: #20628E
 $section1_bgc: #F2F2F2
+$about_wrap_bg : #323232
+$footer_bgc: #f2f2f2
+
+h1
+  font-size: 50px
+  margin: 10px 0
+h2
+  font-size: 40px
+  margin: 10px 0
+
+h3
+  font-size: 30px
+  margin: 10px 0
+h4
+  font-size: 20px
+  margin: 10px 0
+  font-weight: normal
+h5
+  font-size: 16px
+  margin: 10px 0
+  font-weight: normal
+h6
+  font-size: 14px
+  margin: 10px 0
+  font-weight: normal
+h7
+  font-size: 12px
+  margin: 10px 0
+  font-weight: normal
 
 
 .logo
@@ -74,7 +103,7 @@ header
   font-size: $h5_size
   font-family: RobotoSlab-Light
 
-input[type="email_id"]
+input[type="email_id"],input[type="text"],input[type="email"],textarea
   border:1px solid #fff
   padding:5px 15px
   font-size: $h6_size
@@ -92,6 +121,7 @@ input[type="email_id"]
   text-align: center
   margin-top: 30px
 .Section_header
+  margin-bottom: 20px
   text-transform: capitalize
   font-family: RobotoSlab-Light, serif
   font-size: $h4_size
@@ -102,8 +132,10 @@ input[type="email_id"]
   text-align: center
 section.features
   background-color: $section1_bgc
+section
   font-family: RobotoSlab-Light
-.feature_wrap
+  padding-bottom: 40px
+.feature_wrap, .about_wrap
   color: #fff
   padding:10px
   margin: 30px 5px 0px 5px
@@ -113,7 +145,13 @@ section.features
   border:2px solid #fff
   &:hover
     border:2px solid #000
-    
+    cursor: pointer
+.about_wrap
+  display: block
+  padding: 40px  10px
+  background-color: $about_wrap_bg
+  text-align: center
+  vertical-align: middle
 .feature_logo
   margin: 20px
   vertical-align: middle
@@ -121,3 +159,16 @@ section.features
   font-size: 50px
 .feature_logo i
   vertical-align: middle
+
+footer
+  background-color: $footer_bgc
+  font-family: RobotoSlab-Light, serif
+.footer_wrapper
+.text-align
+  text-align: center
+.footer_inf
+  font-weight: normal
+span.soc
+  font-size: $h5_size
+input[type="text"],input[type="email"], textarea
+  display: block
