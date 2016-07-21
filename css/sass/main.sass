@@ -78,7 +78,6 @@ header
   background-position: 5px
   background-repeat: no-repeat
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1)
   &:hover
       box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
       bottom: 1px
@@ -141,11 +140,16 @@ section
   margin: 30px 5px 0px 5px
   display:flex
   background-color: #3498DB
-  transition: all 0.25s
   border:2px solid #fff
+  background-image: url(/images/settings.png)
+  background-size: 35%
+  background-repeat: no-repeat
+  background-position: center right
+  +transition(all 0.35s ease, background-size 1.0s ease-in 0.5s)
   &:hover
-    border:2px solid #000
+    border:2px solid lighten(#000, 20%)
     cursor: pointer
+    background-size: 70%
 .about_wrap
   display: block
   padding: 40px  10px
@@ -163,6 +167,7 @@ section
 footer
   background-color: $footer_bgc
   font-family: RobotoSlab-Light, serif
+  padding-bottom: 40px
 .footer_wrapper
 .text-align
   text-align: center
@@ -171,4 +176,9 @@ footer
 span.soc
   font-size: $h5_size
 input[type="text"],input[type="email"], textarea
-  display: block
+  width: 70%
+  margin-bottom:10px
+.footer_wrapper
+  margin-top: 40px
+.bottom_button
+  background-size: 15%
