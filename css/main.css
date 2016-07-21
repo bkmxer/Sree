@@ -46,10 +46,18 @@ h7 {
 }
 
 .top_container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-betweem;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-justify-content: space-betweem;
+      -ms-flex-pack: space-betweem;
+          justify-content: space-betweem;
 }
 
 header {
@@ -86,7 +94,6 @@ header {
   background-position: 5px;
   background-repeat: no-repeat;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .white_button:hover {
@@ -133,6 +140,21 @@ input[type="email_id"], input[type="text"], input[type="email"], textarea {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
+input[type="email_id"]::-webkit-input-placeholder, input[type="text"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  font-size: 12px;
+  font-family: RobotoSlab-Light;
+}
+
+input[type="email_id"]::-moz-placeholder, input[type="text"]::-moz-placeholder, input[type="email"]::-moz-placeholder, textarea::-moz-placeholder {
+  font-size: 12px;
+  font-family: RobotoSlab-Light;
+}
+
+input[type="email_id"]:-ms-input-placeholder, input[type="text"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  font-size: 12px;
+  font-family: RobotoSlab-Light;
+}
+
 input[type="email_id"]::placeholder, input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder {
   font-size: 12px;
   font-family: RobotoSlab-Light;
@@ -175,15 +197,22 @@ section {
   color: #fff;
   padding: 10px;
   margin: 30px 5px 0px 5px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   background-color: #3498DB;
-  transition: all 0.25s;
   border: 2px solid #fff;
+  background-image: url(/images/settings.png);
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-position: center right;
+  transition: all 0.35s ease, background-size 1s ease-in 0.5s;
 }
 
 .feature_wrap:hover, .about_wrap:hover {
-  border: 2px solid #000;
+  border: 2px solid #333333;
   cursor: pointer;
+  background-size: 70%;
 }
 
 .about_wrap {
@@ -208,6 +237,7 @@ section {
 footer {
   background-color: #f2f2f2;
   font-family: RobotoSlab-Light, serif;
+  padding-bottom: 40px;
 }
 
 .text-align {
@@ -223,5 +253,14 @@ span.soc {
 }
 
 input[type="text"], input[type="email"], textarea {
-  display: block;
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+.footer_wrapper {
+  margin-top: 40px;
+}
+
+.bottom_button {
+  background-size: 15%;
 }
